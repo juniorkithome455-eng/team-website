@@ -6,8 +6,7 @@
 
 | Name | Registration no. | GitHub username |
 |Flavine Odimbo | COM/3484/26 | Osimboflavin-del|
-|Junior Kithome | | Juniorkithome455-eng |
-| | | |
+|Junior Kithome |COM/6880/26 | Juniorkithome455-eng |
 
 ## Who drove each part
 
