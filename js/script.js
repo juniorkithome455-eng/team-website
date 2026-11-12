@@ -84,15 +84,22 @@ const projects = [
     description: "A header that collapses into a menu button on small screens.",
   },
   {
-    title: "Git Portfolio",
+    title: "Git and Github",
     category: "git",
     description:
-      "We learned to use git, branches and Github to save and share our code.",
+      "We learned to use git, branches and Github to commit, push, save and share our code.",
   },
   {
     title: "Cypher Cloud Calculator",
     category: "web",
     description: "A simple calculator built with HTML, CSS and JavaScript.",
+  },
+
+  {
+    title: "Portfolio",
+    category: "port",
+    description:
+      "We designed a very elegant portfolio using HTML, CSS and JavaScript.",
   },
 ];
 
@@ -102,6 +109,7 @@ const categoryNames = {
   js: "JavaScript",
   git: "git",
   web: "web",
+  port: "port",
 };
 
 const projectList = document.querySelector("#project-list");
@@ -134,7 +142,7 @@ function renderProjects(filter) {
     projectList.append(card);
   });
 
-  projectCount.textContent = `Showing ${visible.length} of ${projects.length} projects`;
+  projectCount.textContent = `Showing ${visible.length} of ${projects.length} projects.`;
 }
 
 if (projectList) {

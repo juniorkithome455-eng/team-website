@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Send a message to Team Byte." />
+    <title>Home | Cypher Cloud</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/job.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="logo" href="index.html">Cypher Cloud</a>
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="site-nav"
+        >
+          Menu
+        </button>
+        <nav id="site-nav" class="site-nav" aria-label="Main">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="gallery.html">Project Gallery</a></li>
+            <li><a href="join.html" aria-current="page">Join Us</a></li>
+          </ul>
+        </nav>
+        <button class="theme-toggle" type="button" aria-pressed="false">
+          Dark mode
+        </button>
+      </div>
+    </header>
+
+    <main id="main" class="container">
+      <header class="page-header">
+        <h1>Join The Community</h1>
+        <p class="lead">
+          If you want to join our community and interested to work with use
+          apply down there.
+        </p>
+      </header>
+
+      <form id="join-form" class="contact-form" novalidate>
+        <div class="field">
+          <label for="names">Full name</label>
+          <input
+            type="text"
+            id="names"
+            name="names"
+            autocomplete="names"
+            required
+            aria-describedby="names-error"
+          />
+          <p class="error" id="names-error"></p>
+        </div>
+
+        <div class="field">
+          <label for="emails">Email address</label>
+          <input
+            type="email"
+            id="emails"
+            name="emails"
+            autocomplete="emails"
+            required
+            aria-describedby="emails-error"
+          />
+          <p class="error" id="emails-error"></p>
+        </div>
+
+        <div class="field">
+          <label for="rank">Rank To Enroll In</label>
+          <select id="rank" name="ranks">
+            <option value="soc">SOC</option>
+            <option value="frontend">Frontend Dev</option>
+            <option value="sales manager">Sale & Marketer</option>
+            <option value="fullstack">Fullstack Dev</option>
+            <option value="ceo">CEO</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="description">Decription</label>
+          <textarea
+            id="description"
+            name="description"
+            rows="10"
+            required
+            minlength="40"
+            aria-describedby="description-hint description-error"
+          ></textarea>
+          <p class="hint" id="description-hint">
+            At least 100 words. You have typed
+            <span id="char-counts">0</span>.
+          </p>
+          <p class="error" id="description-error"></p>
+        </div>
+
+        <button class="button" type="apply">APPLY</button>
+        <p id="form-statu" class="form-status" role="statu"></p>
+      </form>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>
+          © <span id="year">2026</span> Junior Kithome & Flavine Osimbo -Cypher
+          Cloud Developers.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
