@@ -88,3 +88,14 @@ if (themeToggle) {
     localStorage.setItem(THEME_KEY, newTheme);
   });
 }
+
+// Open and close the navigation menu on small screens.
+const navToggle = document.querySelector(".nav-toggle");
+const siteNav = document.querySelector("#site-nav");
+
+if (navToggle && siteNav) {
+  navToggle.addEventListener("click", () => {
+    const isOpen = siteNav.classList.toggle("open");
+    navToggle.setAttribute("aria-expanded", String(isOpen));
+  });
+}
