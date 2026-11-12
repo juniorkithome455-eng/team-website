@@ -441,6 +441,10 @@ textarea {
   font: inherit;
 }
 
+select {
+  border: 1px solid var(--color-primary-dark);
+}
+
 input:focus,
 select:focus,
 textarea:focus {
